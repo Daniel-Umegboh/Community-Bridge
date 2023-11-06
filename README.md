@@ -1,2 +1,2 @@
 # Community-Bridge
-Winner solo project to Hyphen Hacks 2023
+Winner solo project of Hyphen Hacks 2023
