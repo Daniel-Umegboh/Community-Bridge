@@ -86,9 +86,9 @@
             border-radius: 5px;
         }
 
-        /* CSS for icon size and positioning */
+        // CSS for icon size and positioning 
         #shareDetails {
-            display: none; /* Remove Share Details */
+            display: none; 
         }
 
         #shareDetails a {
@@ -138,7 +138,7 @@
     crossorigin=""></script>
 <script>
 
-    // Updatesthe display() function to handle the carpool input
+    // Updates the display() function to handle the carpool input
 function display() {
     var eventName = document.getElementById('eventName').value;
     var eventDescription = document.getElementById('eventDescription').value;
@@ -153,7 +153,7 @@ function display() {
     document.getElementById('displayPeople').textContent = people;
     document.getElementById('displayCar').textContent = carpool; // Display the carpool information
 
-    // Show the event details container
+    // Shows the event details container
     document.getElementById('eventDetails').style.display = 'block';
 }
 
@@ -171,13 +171,13 @@ function display() {
         var address = document.getElementById('address').value;
         var people = document.getElementById('eventPeople').value; // Retrieve the number of people
 
-        // Display event details
+        // Displays event details
         document.getElementById('displayEventName').textContent = eventName;
         document.getElementById('displayEventDescription').textContent = eventDescription;
         document.getElementById('displayAddress').textContent = address;
         document.getElementById('displayPeople').textContent = people; // Display the number of people
 
-        // Show the event details container
+        // Shows the event details container
         document.getElementById('eventDetails').style.display = 'block';
     }
 
@@ -187,7 +187,7 @@ function display() {
         // Geocode and set the marker
         var url = 'https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(address);
 
-        fetch(url)// grabs the url variable to display user address in marker
+        fetch(url)// grabs URL variable to display user address in marker
             .then(function(response) {
                 return response.json();
             })
